@@ -3,11 +3,16 @@
   background-color: #0d1116;
   overflow: scroll;
   text-align: center;
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: scroll;
+  background-position: center;
 }
 
 .container {
   height: 100%;
-  background: linear-gradient(0.25turn, #004cff,#36abff,#99d5ff, #36abff, #004cff);
+  /* background: linear-gradient(0.25turn, #004cff,#36abff,#99d5ff, #36abff, #004cff); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
