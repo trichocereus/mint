@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './styles/App.css';
+import './styles/Slider.css';
 import twitterLogo from './assets/twitter-logo.svg';
 import raffleFrens from './utils/RaffleFrens.json'
 import { ethers } from "ethers";
@@ -169,9 +170,21 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header gradient-text">Nate Hallinan x Real Smurf Cat</p>
+          <div className="title-container">
+            <section className="title2">Nate Hallinan</section>
+            <section className="title3">x</section>
+            <section className="title">Real Smurf Cat</section>
+          </div>
+          <div className="slideshow">
+            <div className="slides">
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+            </div>
+          </div>
           <p className="sub-text">
-            Each unique. Each beautiful. Each Ownable.
+            Nate Hallinan's genesis NFT collection. Free to qualifying holders.
           </p>
           {currentAccount === "" ? (
             renderNotConnectedContainer()
@@ -180,6 +193,9 @@ const App = () => {
               Mint NFT
             </button>
           )}
+        </div>
+        <div className="timercont">
+          <iframe className='timer' src="https://free.timeanddate.com/countdown/i950u812/cf111/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pc2c6b9d/tc35aee2/fn3/fs100/szw320/szh135/tatMint%20Begins/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2023-12-12T00:00:00" allowtransparency="true" frameborder="0" width="320" height="135"></iframe>
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />

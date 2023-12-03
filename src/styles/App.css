@@ -22,6 +22,40 @@
   padding-top: 30px;
 }
 
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.title-container section {
+  padding: 0;
+}
+
+.title {
+  font-family: Wonder, sans-serif;
+  color: #5bb0cc;
+  font-size: 9.5vw;
+  padding: 0;
+  margin: 0;
+}
+
+.title2 {
+  font-family: Alien, sans-serif;
+  color: #000000;
+  font-size: 7.75vw;
+  padding: 0;
+  margin: 0;
+}
+
+.title3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+  color: #ffffff;
+  font-size: 6vw;
+  padding: 0;
+  margin: 0px 20px;
+}
+
 .header {
   margin: 0;
   font-size: 50px;
@@ -41,14 +75,14 @@
 }
 
 .cta-button {
-  height: 45px;
+  height: 80px;
   border: 0;
   width: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
   color: white;
 }
@@ -92,6 +126,15 @@
   color: #2c6b9d;
   font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.timer {
+  padding: 50px 0;
+}
+
+.timercont {
+  text-align: center;
 }
 
 /* KeyFrames */
@@ -128,3 +171,6 @@
     background-position: 0% 50%;
   }
 }
+
+@font-face { font-family: Wonder; src: url('../assets/fonts/wonder.ttf'); }
+@font-face { font-family: Alien; src: url('../assets/fonts/alien.otf'); }
