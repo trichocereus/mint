@@ -155,7 +155,7 @@ const App = () => {
   // Render Methods
   const renderNotConnectedContainer = () => (
     <button onClick={connectWallet} className="cta-button connect-wallet-button">
-      Click to Connect your Wallet
+      Connect Wallet
     </button>
   );
 
@@ -184,7 +184,7 @@ const App = () => {
             </div>
           </div>
           <p className="sub-text">
-            Nate Hallinan's genesis NFT collection. Free to qualifying holders.
+            Nate Hallinan's genesis NFT collection. Free to qualifying шайлушай holders.
           </p>
           {currentAccount === "" ? (
             renderNotConnectedContainer()

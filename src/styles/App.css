@@ -65,14 +65,7 @@
 .sub-text {
   font-size: 50px;
   color: white;;
-  margin: 40px 40px
-}
-
-.gradient-text {
-  background: -webkit-linear-gradient(left, #2c6b9d 30%, #35aee2 60%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin: 60px;
 }
 
 .cta-button {
@@ -89,9 +82,10 @@
 }
 
 .connect-wallet-button {
-  background: -webkit-linear-gradient(left, #2c6b9d, #35aee2);
+  background: -webkit-linear-gradient(left, #6ca7ff, #5bb0cc);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
+  border-radius: 15px;
 }
 
 .mint-button {
