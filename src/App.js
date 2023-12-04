@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import './styles/App.css';
 import './styles/Slider.css';
 import twitterLogo from './assets/twitter-logo.svg';
+import smurfcat from './assets/smurf.PNG';
 import raffleFrens from './utils/RaffleFrens.json'
 import { ethers } from "ethers";
 
@@ -189,14 +190,23 @@ const App = () => {
           {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
-            <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
-              Mint NFT
-            </button>
+            // <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
+            //   Mint NFT
+            // </button>
+            <button className="cta-button connect-wallet-button">
+            Mint NFT
+          </button>
+
           )}
         </div>
         <div className="timer">
           <iframe src="https://free.timeanddate.com/countdown/i95179io/n217/cf11/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fn3/fs300/szw320/szh135/iso2023-12-12T17:00:00" allowtransparency="true" frameborder="0" width="912" height="55"></iframe>
         </div>
+        <div className="links-container">
+          <a className='links' href='https://natehallinan.com/resume'>About the artist</a>
+          <a className='links' href='https://smurfcat.eth.limo'>Token website</a>
+        </div>
+        <img alt='Smurf Cat' className="smurf" src={smurfcat} />
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
