@@ -1,12 +1,38 @@
+@media screen and (min-width: 480px) {
+    .slideshow {
+        width: 400px;
+        margin: 0 auto;
+        overflow:hidden;
+        border-radius: 20px;
+    }
+    
+    .slides {
+        width:1200px; /* 300 x 4 */
+        position:relative;
+        -webkit-animation:slide 20s ease-in-out infinite;
+        -moz-animation:slide 20s ease-in-out infinite;
+        -ms-animation:slide 20s ease-in-out infinite;
+        -o-animation:slide 20s ease-in-out infinite;
+        animation:slide 20s ease-in-out infinite;
+    }
+    
+    .slides section {
+        width:300px;
+        height:300px;
+        float:left; 
+    }
+  }
+
+
 .slideshow {
-    width:600px;
-    margin:0 auto;
+    width: 800px;
+    margin: 0 auto;
     overflow:hidden;
     border-radius: 20px;
 }
 
 .slides {
-    width:2400px; /* 300 x 4 */
+    width:3200px; /* 300 x 4 */
     position:relative;
     -webkit-animation:slide 20s ease-in-out infinite;
     -moz-animation:slide 20s ease-in-out infinite;
@@ -16,8 +42,8 @@
 }
 
 .slides section {
-    width:600px;
-    height:600px;
+    width:800px;
+    height:800px;
     float:left; 
 }
 
@@ -33,37 +59,37 @@
 
 @-webkit-keyframes slide {
     0% {left:0;}
-    25% {left:-600px;}
-    50% {left:-1200px;}
-    75% {left:-1800px;}
+    25% {left:-800px;}
+    50% {left:-1600px;}
+    75% {left:-2400px;}
     100% {left:0;}
 }
 @-moz-keyframes slide {
     0% {left:0;}
-    25% {left:-600px;}
-    50% {left:-1200px;}
-    75% {left:-1800px;}
+    25% {left:-800px;}
+    50% {left:-1600px;}
+    75% {left:-2400px;}
     100% {left:0;}
 }
 @-ms-keyframes slide {
     0% {left:0;}
-    25% {left:-600px;}
-    50% {left:-1200px;}
-    75% {left:-1800px;}
+    25% {left:-800px;}
+    50% {left:-1600px;}
+    75% {left:-2400px;}
     100% {left:0;}
 }
 @-o-keyframes slide {
     0% {left:0;}
-    25% {left:-600px;}
-    50% {left:-1200px;}
-    75% {left:-1800px;}
+    25% {left:-800px;}
+    50% {left:-1600px;}
+    75% {left:-2400px;}
     100% {left:0;}
 }
 @keyframes slide {
     0% {left:0;}
-    25% {left:-600px;}
-    50% {left:-1200px;}
-    75% {left:-1800px;}
+    25% {left:-800px;}
+    50% {left:-1600px;}
+    75% {left:-2400px;}
     100% {left:0;}
 }
 

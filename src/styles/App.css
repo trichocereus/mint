@@ -63,8 +63,9 @@
 }
 
 .sub-text {
-  font-size: 25px;
-  color: white;
+  font-size: 50px;
+  color: white;;
+  margin: 40px 40px
 }
 
 .gradient-text {
@@ -75,14 +76,14 @@
 }
 
 .cta-button {
-  height: 80px;
+  height: 120px;
   border: 0;
   width: auto;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 200px;
+  padding-right: 200px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
   color: white;
 }
@@ -118,13 +119,13 @@
 }
 
 .twitter-logo {
-  width: 35px;
-  height: 35px;
+  width: 100px;
+  height: 100px;
 }
 
 .footer-text {
   color: #2c6b9d;
-  font-size: 16px;
+  font-size: 36px;
   font-weight: bold;
   text-decoration: none;
 }
