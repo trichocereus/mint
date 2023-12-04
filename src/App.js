@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import './styles/App.css';
 import './styles/Slider.css';
 import twitterLogo from './assets/twitter-logo.svg';
-import smurfcat from './assets/smurf.PNG';
 import raffleFrens from './utils/RaffleFrens.json'
 import { ethers } from "ethers";
 
@@ -206,7 +205,6 @@ const App = () => {
           <a className='links' href='https://natehallinan.com/resume'>About the artist</a>
           <a className='links' href='https://smurfcat.eth.limo'>Token website</a>
         </div>
-        <img alt='Smurf Cat' className="smurf" src={smurfcat} />
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
