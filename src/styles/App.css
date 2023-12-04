@@ -118,18 +118,15 @@
 }
 
 .footer-text {
-  color: #2c6b9d;
+  color: #5bb0cc;
   font-size: 36px;
   font-weight: bold;
   text-decoration: none;
 }
 
 .timer {
-  padding: 50px 0;
-}
-
-.timercont {
-  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 /* KeyFrames */
