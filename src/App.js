@@ -181,6 +181,7 @@ const App = () => {
                 <section></section>
                 <section></section>
                 <section></section>
+                <section></section>
             </div>
           </div>
           <p className="sub-text">
@@ -199,7 +200,7 @@ const App = () => {
           )}
         </div>
         <div className="timer">
-          <iframe src="https://free.timeanddate.com/countdown/i95179io/n217/cf11/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fn3/fs300/szw320/szh135/iso2023-12-12T17:00:00" allowtransparency="true" frameborder="0" width="912" height="55"></iframe>
+          <iframe src="https://free.timeanddate.com/countdown/i953fa6z/n202/cf11/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fn3/fs300/szw320/szh135/iso2023-12-12T12:00:00" allowtransparency="true" frameborder="0" width="912" height="55"></iframe>
         </div>
         <div className="links-container">
           <a className='links' href='https://natehallinan.com/resume'>About the artist</a>

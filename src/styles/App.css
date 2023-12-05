@@ -47,6 +47,7 @@
   padding: 0;
   margin: 0;
   text-shadow: 1.5px 1.5px 2px #FFFFFF;
+  font-style: bold;
 }
 
 .title3 {
@@ -67,6 +68,7 @@
   font-size: 50px;
   color: white;;
   margin: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .cta-button {
@@ -181,8 +183,8 @@
   text-decoration: none;
   color: #FFFFFF;
   margin: 0 15px;
-  font-size: 36px;
+  font-size: 48px;
   font-family: Alien, sans-serif;
-  box-shadow: 1.5px 1.5px #FFFFFF;
+  box-shadow: #FFFFFF 1px 0 5px;
   font-style: bold;
 }
