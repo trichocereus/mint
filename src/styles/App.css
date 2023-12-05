@@ -1,12 +1,15 @@
+body, h1, h2, h3, h4, p, figure, div {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  height: 100vh;
+  height: max-content;
   background-color: #0d1116;
-  overflow: scroll;
   text-align: center;
   background-image: url("../assets/bg.jpg");
   background-repeat: no-repeat;
   background-size:cover;
-  background-attachment: scroll;
   background-position: center;
 }
 
