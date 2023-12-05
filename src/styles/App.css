@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, p, figure, div {
+body, h1, h2, h3, h4, p, figure, div, section {
   margin: 0;
   padding: 0;
 }
@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, p, figure, div {
   text-align: center;
   background-image: url("../assets/bg.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center;
 }
 
