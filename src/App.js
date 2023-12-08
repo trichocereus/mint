@@ -207,13 +207,13 @@ const App = () => {
           <a className='links' href='https://smurfcat.eth.limo'>Token website</a>
         </div>
         <p className="h-text">MINT SCHEDULE </p>
-        <p className="p-text">(wallet list and criteria for eligibility will be released on Monday, Dec 11 at 12PM PST) </p>
+        <p className="p-text">(Wallet list and criteria for eligibility will be released on Monday, Dec 11 at 12PM PST) </p>
         <p className="h-text">Phase 1 (3000 mints)</p>
         <p className="p-text">Who: Top 2000 holders based on 3 snapshots</p>
         <p className="p-text">Top 1000: 2 free mints </p>
         <p className="p-text">Top 1001-2000: 1 free mint</p>
         <p className="p-text">When: Tuesday, Dec 12 at 12PM PST</p>
-        <p className="p-text">Important: mints will be guaranteed for at least 12 hours until Phase 2 starts </p>
+        <p className="p-text">Important: Mints will be guaranteed for at least 12 hours until Phase 2 starts </p>
         <p className="h-text">Phase 2 (remainder of phase 1 supply)</p>
         <p className="p-text">Who: In addition to the top 2000 wallets, the top 2001-2500 holders based on 3 snapshots will have a chance for 1 free mint until all 3000 mints are claimed</p>
         <p className="p-text">When: Wednesday, Dec 13 at 12AM PST</p>
