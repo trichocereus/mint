@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import './styles/App.css';
 import './styles/Slider.css';
 import twitterLogo from './assets/twitter-logo.svg';
-import raffleFrens from './utils/RaffleFrens.json'
+import smurfCat from './utils/smurfCat.json'
 import { ethers } from "ethers";
 
 // Constants
 const TWITTER_HANDLE = 'smurfcateth';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = 'https://testnets.opensea.io/assets/';
-const TOTAL_MINT_COUNT = 50;
+// const OPENSEA_LINK = 'https://testnets.opensea.io/assets/';
+// const TOTAL_MINT_COUNT = 50;
 const CONTRACT_ADDRESS = "0x2B778f7CEa3f920242Ab6a42B828EE633b70E96D";
-const MINT_AMOUNT = "1";
+// const MINT_AMOUNT = "1";
 
 const App = () => {
 
@@ -95,7 +95,7 @@ const App = () => {
         // Same stuff again
         const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
-        const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, raffleFrens.abi, signer);
+        const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, smurfCat.abi, signer);
 
         // THIS IS THE MAGIC SAUCE.
         // This will essentially "capture" our event when our contract throws it.
@@ -118,14 +118,13 @@ const App = () => {
 
   const askContractToMintNft = async () => {
     
-  
     try {
       const { ethereum } = window;
   
       if (ethereum) {
         const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
-        const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, raffleFrens.abi, signer);
+        const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, smurfCat.abi, signer);
   
         console.log("Going to pop wallet now to pay gas...")
         let nftTxn = await connectedContract.mintFren(1, {gasPrice: ethers.utils.parseUnits('1', 'gwei'), gasLimit: 253578, value: ethers.utils.parseEther("0.010000")});
@@ -190,17 +189,17 @@ const App = () => {
           {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
-            // <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
-            //   Mint NFT
-            // </button>
-            <button className="cta-button connect-wallet-button">
-            Mint NFT
-          </button>
+            <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
+              Mint NFT
+            </button>
+          //   <button className="cta-button connect-wallet-button">
+          //   Mint NFT
+          // </button>
 
           )}
         </div>
         <div className="timer">
-          <iframe src="https://free.timeanddate.com/countdown/i953fa6z/n202/cf11/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fn3/fs300/szw320/szh135/iso2023-12-12T12:00:00" allowtransparency="true" frameborder="0" width="912" height="55"></iframe>
+          <iframe src="https://free.timeanddate.com/countdown/i953fa6z/n202/cf11/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fn3/fs300/szw320/szh135/iso2023-12-12T12:00:00" allowtransparency="true" frameBorder="0" title='countdown' width="912" height="55"></iframe>
         </div>
         <div className="links-container">
           <a className='links' href='https://natehallinan.com/resume'>About the artist</a>
