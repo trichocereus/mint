@@ -19,6 +19,31 @@ const App = () => {
   * Just a state variable we use to store our user's public wallet. Don't forget to import useState.
   */
   const [currentAccount, setCurrentAccount] = useState("");
+
+  /*
+  * Another state variable to track whitelist status of current account
+  */
+  // const [isWhitelisted, setIsWhitelisted] = useState(false);
+
+  /*
+  * Check if user's address is on whitelist
+  */
+  // const checkIfWhitelisted = async () => {
+  //   try {
+  //     const { ethereum } = window;
+  //     if (ethereum && currentAccount) {
+  //       const provider = new ethers.providers.Web3Provider(ethereum);
+  //       const signer = provider.getSigner();
+  //       const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, smurfCat.abi, signer);
+  
+  //       // Replace 'isAddressWhitelisted' with your contract's whitelist checking function
+  //       const status = await connectedContract.isAddressWhitelisted(currentAccount);
+  //       setIsWhitelisted(status);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error checking whitelist status", error);
+  //   }
+  // };
   
   /*
   * Gotta make sure this is async.
@@ -37,6 +62,9 @@ const App = () => {
     * Check if we're authorized to access the user's wallet
     */
     const accounts = await ethereum.request({ method: 'eth_accounts' });
+
+    // setCurrentAccount(accounts);
+    // checkIfWhitelisted();
 
     /*
     * User can have multiple authorized accounts, we grab the first one if its there!
@@ -70,6 +98,9 @@ const App = () => {
       * Fancy method to request access to account.
       */
       const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+
+      // setCurrentAccount(accounts[0]);
+      // checkIfWhitelisted();
       
       /*
       *  This should print out public address once we authorize Metamask.
@@ -116,40 +147,40 @@ const App = () => {
   }
 
 
-  const askContractToMintNft = async () => {
+  // const askContractToMintNft = async () => {
     
-    try {
-      const { ethereum } = window;
+  //   try {
+  //     const { ethereum } = window;
   
-      if (ethereum) {
-        const provider = new ethers.providers.Web3Provider(ethereum);
-        const signer = provider.getSigner();
-        const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, smurfCat.abi, signer);
+  //     if (ethereum) {
+  //       const provider = new ethers.providers.Web3Provider(ethereum);
+  //       const signer = provider.getSigner();
+  //       const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, smurfCat.abi, signer);
   
-        console.log("Going to pop wallet now to pay gas...")
-        let nftTxn = await connectedContract.mintFren(1, {gasPrice: ethers.utils.parseUnits('1', 'gwei'), gasLimit: 253578, value: ethers.utils.parseEther("0.010000")});
-        let chainId = await ethereum.request({ method: 'eth_chainId' });
-        console.log("Connected to chain " + chainId);
+  //       console.log("Going to pop wallet now to pay gas...")
+  //       let nftTxn = await connectedContract.mintFren(1, {gasPrice: ethers.utils.parseUnits('1', 'gwei'), gasLimit: 253578, value: ethers.utils.parseEther("0.010000")});
+  //       let chainId = await ethereum.request({ method: 'eth_chainId' });
+  //       console.log("Connected to chain " + chainId);
 
-        // String, hex code of the chainId of the Rinkebey test network (Change to 0x1 for mainnet)
-        const rinkebyChainId = "0x4"; 
-        if (chainId !== rinkebyChainId) {
-	        alert("You are not connected to the Rinkeby Test Network!");
-        }
+  //       // String, hex code of the chainId of the Rinkebey test network (Change to 0x1 for mainnet)
+  //       const rinkebyChainId = "0x4"; 
+  //       if (chainId !== rinkebyChainId) {
+	//         alert("You are not connected to the Rinkeby Test Network!");
+  //       }
 
       
-        console.log("Mining...please wait.")
-        await nftTxn.wait();
+  //       console.log("Mining...please wait.")
+  //       await nftTxn.wait();
         
-        console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
+  //       console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
   
-      } else {
-        console.log("Ethereum object doesn't exist!");
-      }
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  //     } else {
+  //       console.log("Ethereum object doesn't exist!");
+  //     }
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
 
   // Render Methods
   const renderNotConnectedContainer = () => (
@@ -186,16 +217,22 @@ const App = () => {
           <p className="sub-text">
             Nate Hallinan's genesis NFT collection. Free to qualifying шайлушай holders.
           </p>
-          {currentAccount === "" ? (
+          {/* {isWhitelisted ? (
             renderNotConnectedContainer()
           ) : (
             <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
               Mint NFT
             </button>
-          //   <button className="cta-button connect-wallet-button">
-          //   Mint NFT
-          // </button>
-
+          )} */}
+          {currentAccount === "" ? (
+            renderNotConnectedContainer()
+          ) : (
+            // <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
+            //   Mint NFT
+            // </button>
+            <button className="cta-button connect-wallet-button">
+              Soon
+            </button>
           )}
         </div>
         <div className="timer">

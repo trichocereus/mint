@@ -218,3 +218,162 @@ body, h1, h2, h3, h4, p, figure, div, section, img {
  border-radius: 30px;
  padding: 30px;
 }
+
+@media screen and (min-width: 480px) {
+  .slideshow {
+      width: 400px;
+      margin: 0 auto;
+      overflow:hidden;
+      border-radius: 20px;
+  }
+  
+  .slides {
+      width:1200px; /* 300 x 4 */
+      position:relative;
+      -webkit-animation:slide 20s ease-in-out infinite;
+      -moz-animation:slide 20s ease-in-out infinite;
+      -ms-animation:slide 20s ease-in-out infinite;
+      -o-animation:slide 20s ease-in-out infinite;
+      animation:slide 20s ease-in-out infinite;
+  }
+  
+  .slides section {
+      width:300px;
+      height:300px;
+      float:left; 
+  }
+}
+
+
+.slideshow {
+  width: 600px;
+  margin: 0 auto;
+  overflow:hidden;
+  border-radius: 20px;
+}
+
+.slides {
+  width:3000px; /* 300 x 4 */
+  position:relative;
+  -webkit-animation:slide 20s ease-in-out infinite;
+  -moz-animation:slide 20s ease-in-out infinite;
+  -ms-animation:slide 20s ease-in-out infinite;
+  -o-animation:slide 20s ease-in-out infinite;
+  animation:slide 20s ease-in-out infinite;
+}
+
+.slides section {
+  width:600px;
+  height:600px;
+  float:left; 
+}
+
+.slides section:nth-child(1) {background-image: url("../assets/ImageSlider/1.jpeg"); background-size: cover;}
+.slides section:nth-child(2) {background-image: url("../assets/ImageSlider/2.jpeg"); background-size: cover;}
+.slides section:nth-child(3) {background-image: url("../assets/ImageSlider/3.jpeg"); background-size: cover;}
+.slides section:nth-child(4) {background-image: url("../assets/ImageSlider/4.jpeg"); background-size: cover;}
+.slides section:nth-child(5) {background-image: url("../assets/ImageSlider/5.jpeg"); background-size: cover;}
+
+.slides:hover {
+ animation-play-state:paused;
+ -webkit-animation-play-state:paused;
+}
+
+/* @-webkit-keyframes slide {
+  0% {left:0;}
+  25% {left:-800px;}
+  50% {left:-1600px;}
+  75% {left:-2400px;}
+  100% {left:0;}
+}
+@-moz-keyframes slide {
+  0% {left:0;}
+  25% {left:-800px;}
+  50% {left:-1600px;}
+  75% {left:-2400px;}
+  100% {left:0;}
+}
+@-ms-keyframes slide {
+  0% {left:0;}
+  25% {left:-800px;}
+  50% {left:-1600px;}
+  75% {left:-2400px;}
+  100% {left:0;}
+}
+@-o-keyframes slide {
+  0% {left:0;}
+  25% {left:-800px;}
+  50% {left:-1600px;}
+  75% {left:-2400px;}
+  100% {left:0;}
+} */
+
+@keyframes slide {
+  0% {left:0;}
+  20% {left:-600px;}
+  40% {left:-1200px;}
+  60% {left:-1800px;}
+  80% {left:-2400px;}
+  100% {left:0;}
+}
+
+/* Desktop Screens */
+@media (min-width: 1025px) {
+  .title {
+    font-size: 7vw; /* Scaled down from 9.5vw */
+  }
+
+  .title2 {
+    font-size: 6vw; /* Scaled down from 7.75vw */
+  }
+
+  .title3 {
+    font-size: 4.5vw; /* Scaled down from 6vw */
+  }
+
+  .sub-text {
+    font-size: 36px; /* Scaled down from 50px */
+    margin: 45px; /* Adjusted from 60px */
+  }
+
+  .p-text, .h-text {
+    font-size: 36px; 
+/* Scaled down from 40px and 50px */
+    margin: 8px; /* Adjusted from 10px */
+  }
+
+  .cta-button {
+    height: 100px; /* Scaled down from 120px */
+    padding: 0 150px; /* Adjusted from 200px */
+    font-size: 30px; /* Scaled down from 36px */
+  }
+
+  .footer-container {
+    padding: 20px 0; /* Adjusted from 30px */
+  }
+
+  .twitter-logo {
+    width: 80px; /* Scaled down from 100px */
+    height: 80px; /* Scaled down from 100px */
+  }
+
+  .footer-text {
+    font-size: 30px; /* Scaled down from 36px */
+  }
+
+  .links {
+    font-size: 36px; /* Scaled down from 48px */
+    padding: 18px 40px; /* Adjusted padding */
+    margin: 0 10px; /* Adjusted from 15px */
+  }
+
+  .timer {
+    padding: 40px 0; 
+/* Adjusted from 60px and 40px */
+  }
+
+  .cont2 {
+    margin: 30px; /* Adjusted from 40px */
+    padding: 20px; /* Adjusted from 30px */
+  }
+}
