@@ -186,7 +186,7 @@ const App = () => {
           <p className="sub-text">
             Nate Hallinan's genesis NFT collection. Free to qualifying шайлушай holders.
           </p>
-          {currentAccount ? (
+          {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
             // <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
