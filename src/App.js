@@ -101,6 +101,7 @@ function App() {
 
   useEffect(() => {
     checkIfWalletIsConnected();
+    checkEligibility();
   }, []);
 
 
