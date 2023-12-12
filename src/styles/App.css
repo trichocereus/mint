@@ -319,17 +319,6 @@ body, h1, h2, h3, h4, p, figure, div, section, img {
 
 /* Desktop Screens */
 @media (min-width: 1025px) {
-  .title {
-    font-size: 7vw; /* Scaled down from 9.5vw */
-  }
-
-  .title2 {
-    font-size: 6vw; /* Scaled down from 7.75vw */
-  }
-
-  .title3 {
-    font-size: 4.5vw; /* Scaled down from 6vw */
-  }
 
   .sub-text {
     font-size: 36px; /* Scaled down from 50px */
