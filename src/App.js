@@ -151,14 +151,16 @@ function App() {
     <div>
       <p className='minttxt'>Eligibility: {eligibility.phases.join(', ')}</p>
       <p className='minttxt'>Allowed: {eligibility.allowedMints.join(', ')}</p>
+      <p className='minttxt'>(Above data is not completely up to date, please refer to spreadsheet below)</p>
     </div>
-            <button
+            {/* <button
               className='mintbtn'
               onClick={mintNFT}
               disabled={!saleIsActive || eligibility.allowedMints.length === 0}
             >
               {saleIsActive ? 'Mint NFT' : 'Minting Not Live'}
-            </button>
+            </button> */}
+            <a className='mintbtn' href='https://docs.google.com/spreadsheets/d/13xoUaHkTcEShY-vWQkpauLUUq5IWV46eeacgmDejc2Y/edit?ouid=105360096499324579031&usp=sheets_home&ths=true'>Check eligibility here</a>
           </div>
         ) : (
           <button className='connect' onClick={connectWallet}>Connect Wallet</button>
@@ -166,7 +168,7 @@ function App() {
 
         </div>
         <div className="timer">
-          <iframe src="https://free.timeanddate.com/countdown/i953fa6z/n202/cf11/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fn3/fs300/szw320/szh135/iso2023-12-12T15:00:00" allowtransparency="true" frameBorder="0" title='countdown' width="912" height="55"></iframe>
+          <iframe src="https://free.timeanddate.com/countdown/i953fa6z/n202/cf11/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fn3/fs300/szw320/szh135/iso2023-12-13T12:00:00" allowtransparency="true" frameBorder="0" title='countdown' width="912" height="55"></iframe>
         </div>
         <div className="links-container">
           <a className='links' href='https://natehallinan.com/resume'>About the artist</a>
