@@ -181,14 +181,14 @@ function App() {
           <p className="p-text">Who: Top 2000 holders based on 3 snapshots</p>
           <p className="p-text">Top 1000: 2 free mints </p>
           <p className="p-text">Top 1001-2000: 1 free mint</p>
-          <p className="p-text">When: Tuesday, Dec 12 at 3PM PST</p>
+          <p className="p-text">When: Wednesday, Dec 13 at 12PM PST</p>
           <p className="p-text">Important: Mints will be guaranteed for at least 12 hours until Phase 2 starts </p>
           <p className="h-text">Phase 2 (Remainder of Phase 1 supply)</p>
           <p className="p-text">Who: In addition to the top 2000 wallets, the top 2001-2500 holders based on 3 snapshots will have a chance for 1 free mint until all 3000 mints are claimed</p>
-          <p className="p-text">When: Wednesday, Dec 13 at 3AM PST</p>
+          <p className="p-text">When: Thursday, Dec 14 at 12AM PST</p>
           <p className="h-text">Phase 3 (300 mints @ 0.01 eth each) </p>
           <p className="p-text">Who: 330 Whitelisted addresses (10% oversubscribed due to high demand)</p>
-          <p className="p-text">When: Wednesday, Dec 13 at 3PM PST</p>
+          <p className="p-text">When: Thursday, Dec 14 at 12PM PST</p>
           <p className="h-text">Reveal: 24 hours after collection is minted out</p>
           <p className="p-text">Happy holidays from Real Smurf Cat and Nate Hallinan!</p>
         </div>
