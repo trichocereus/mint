@@ -139,19 +139,19 @@ function App() {
           {currentAccount ? (
           <div className='mintcont'>
             <p className='minttit'>Connected: {currentAccount}</p>
-            <input
+            {/* <input
               type="text"
               placeholder="Check another address"
               value={checkAddress}
               onChange={(e) => setCheckAddress(e.target.value)}
               className='inpu'
-            />
-            <button className='inputi' onClick={() => checkEligibility(checkAddress)}>Check Eligibility</button>
+            /> */}
+            {/* <button className='inputi' onClick={() => checkEligibility(checkAddress)}>Check Eligibility</button> */}
             {/* Display eligibility information here */}
     <div>
-      <p className='minttxt'>Eligibility: {eligibility.phases.join(', ')}</p>
+      {/* <p className='minttxt'>Eligibility: {eligibility.phases.join(', ')}</p>
       <p className='minttxt'>Allowed: {eligibility.allowedMints.join(', ')}</p>
-      <p className='minttxt'>(Above data is not completely up to date, please refer to spreadsheet below)</p>
+      <p className='minttxt'>(Above data is not completely up to date, please refer to spreadsheet below)</p> */}
     </div>
             {/* <button
               className='mintbtn'
@@ -175,21 +175,18 @@ function App() {
           <a className='links' href='https://smurfcat.eth.limo'>Token website</a>
         </div>
         <div className="cont2">
-          <p className="h-text">MINT SCHEDULE </p>
-          <p className="p-text">(Wallet list and criteria for eligibility will be released on Monday, Dec 11 at 12PM PST) </p>
-          <p className="h-text">Phase 1 (3000 mints)</p>
+          <p className="t-text">UPDATED MINT SCHEDULE </p>
+          <p className="h-text">Phase 1 (3300 mints)</p>
           <p className="p-text">Who: Top 2000 holders based on 3 snapshots</p>
           <p className="p-text">Top 1000: 2 free mints </p>
           <p className="p-text">Top 1001-2000: 1 free mint</p>
+          <p className="p-text">*Mints will be guaranteed to holders for at least 12 hours until Phase 2 starts* </p>
+          <p className="p-text">300 Whitelisted addresses can mint for 0.01 eth (10% oversubscribed due to high demand)</p>
           <p className="p-text">When: Wednesday, Dec 13 at 12PM PST</p>
-          <p className="p-text">Important: Mints will be guaranteed for at least 12 hours until Phase 2 starts </p>
-          <p className="h-text">Phase 2 (Remainder of Phase 1 supply)</p>
-          <p className="p-text">Who: In addition to the top 2000 wallets, the top 2001-2500 holders based on 3 snapshots will have a chance for 1 free mint until all 3000 mints are claimed</p>
+          <p className="h-text">Phase 2 (remaining for 0.01 eth each) </p>
+          <p className="p-text">Who: Public get a chance to mint remaining supply</p>
           <p className="p-text">When: Thursday, Dec 14 at 12AM PST</p>
-          <p className="h-text">Phase 3 (300 mints @ 0.01 eth each) </p>
-          <p className="p-text">Who: 330 Whitelisted addresses (10% oversubscribed due to high demand)</p>
-          <p className="p-text">When: Thursday, Dec 14 at 12PM PST</p>
-          <p className="h-text">Reveal: 24 hours after collection is minted out</p>
+          <p className="h-text">Reveal: 48 hours after collection is minted out</p>
           <p className="p-text">Happy holidays from Real Smurf Cat and Nate Hallinan!</p>
         </div>
         <div className="footer-container">

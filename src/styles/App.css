@@ -93,6 +93,15 @@ body, h1, h2, h3, h4, p, figure, div, section, img {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.t-text {
+  padding-bottom: 20px;
+  padding-top: 40px;
+  font-size: 90px;
+  color: white;;
+  margin: 10px;
+  font-family: Wonder, sans-serif;
+}
+
 .cta-button {
   height: 120px;
   border: 0;
